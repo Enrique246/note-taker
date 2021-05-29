@@ -18,6 +18,21 @@ const PORT = process.env.PORT || 8080;
 //GET /api/notes should read the db.json file and return all saved notes as JSON.
 //POST /api/notes should receive a new note to save on the request body, add it to the db.json file, and then return the new note to the client.
 
+const express = require=("express");
+const application = express();
+const PORT = 8080;
+
+const apiRout = require ("./routes/ApiRoutes");
+const htmlRout = require ("./routes/HtmlRoutes");
+
+application.use(express.urlencoded({extended:true}));
+application.use(express.json());
+
+application.use("/api", apiRout);
+app.use("/", htmlRout);
+
+application.use(express.static("public"));
+
 // LISTENER
 // The below code effectively "starts" our server
 

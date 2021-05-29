@@ -35,6 +35,9 @@ const searchById = (id, nArray) => {
 
 const deleteNote = (notes, nArray) => {
     const ind = nArray. indexOf(notes);
+// IndexOf 
+//The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
     nArray.splice (index,1);
 fs.writeFileSync(
     patth.join(__dirname,'../db/db.json'),
