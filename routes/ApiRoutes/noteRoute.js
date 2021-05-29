@@ -31,4 +31,4 @@ rout.delete('/notes/:id',(req, res)=> {
     res.json();    
     });
 
-    module.exports = rout;
+    module.exports = router;
