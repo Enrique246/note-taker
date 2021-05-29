@@ -11,4 +11,6 @@ rout.get('/notes', (req, res) => {
 
 });
 
+// Router conection
+//https://stackoverflow.com/questions/56078508/why-is-module-exports-router-is-needed
 module.exports = router;
