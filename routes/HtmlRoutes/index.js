@@ -7,7 +7,7 @@ rout.get('/', (req, res) => {
 });
 
 rout.get('/notes', (req, res) => {
-    res.sendFile(patth.join(__dirname,'../../public/index.html'));
+    res.sendFile(patth.join(__dirname,'../../public/notes.html'));
 
 });
 

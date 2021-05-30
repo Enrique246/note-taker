@@ -4,14 +4,15 @@ const rout = require('express').Router();
 //V4 : Randomness
 //The generation of a v4 UUID is much simpler to comprehend. The bits that comprise a UUID v4 are generated randomly and with no inherent logic. Because of this, there is no way to identify information about the source by looking at the UUID.
 const {v4: uuidv4} = require('uuid');
-const {notes} = require('../../db/db.json')
-const {buildNewNote, searchById, edittNote, deleteNote}= require('../../notes/notes')
+const {notes} = require('../../db/db')
+const {buildNewNote, searchById, edittNote, deleteNote}= require('../../lib/note/note')
 
 rout.get('/notes', (req, res)=>{
     res.json(notes);
-
+});
 
 //Builds new note
+rout.post('/notes', (req,res) =>{
 if (!req.body.id){
     req.body.id = uuidv4();
     buildNewNote(req.body,notes);
