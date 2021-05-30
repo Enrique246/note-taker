@@ -13,7 +13,7 @@ application.use(express.urlencoded({extended:true}));
 application.use(express.json());
 
 application.use("/api", apiRout);
-app.use("/", htmlRout);
+application.use("/", htmlRout);
 
 application.use(express.static("public"));
 
