@@ -1,11 +1,11 @@
-## Homework 10
+## Homework 11
 
-## Team Profile Generator
+## Note-Taker
 ### Description
 - What was your motivation?
-  - Learning to build a complete app with test verification as a feature.
+  - Build an app that has both manually built front-end and a server-side local saving.
 - Why did you build this project?  
-  - To undesterstand how html, test nad java script connect to get a working app.
+  - To start to understand how front-end and back-end relate and work togather.
 - What problem does it solve?
 ```md
 GIVEN a note-taking application
@@ -37,6 +37,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 - HTML
 - UUID
 - CSS
+- Express
 
 ## Usage
 
@@ -59,3 +60,4 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 - Note deleting
 - Note storage in local server
 - List appears on the left side
+- Link named "Note-Taker" at the left side works
